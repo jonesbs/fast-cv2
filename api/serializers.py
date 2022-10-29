@@ -25,7 +25,3 @@ class ImageCropRequest(BaseModel):
 
 class ImageCropResponse(BaseModel):
     result_image: str
-
-    @staticmethod
-    def parse_from_img(image_b64: str, extension: str):
-        return "data"
