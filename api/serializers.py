@@ -27,6 +27,7 @@ class ImageCropRequest(BaseModel):
     def validate_coordinates(item):
         if isinstance(item, int) and item < 0:
             raise ValueError("Coordinates need to be positive values")
+        return item
 
 class ImageCropResponse(BaseModel):
     result_image: str
